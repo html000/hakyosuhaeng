@@ -1,11 +1,10 @@
 body{
-    color: white;
+    color:  black;
     margin: auto 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 p{
     font-size: 80px;
-    padding-left: 50px;
 }
 h1{
     padding-left: 50px;
@@ -37,7 +36,7 @@ ul{
     list-style-type: none;
     display: block;
     background-color: white;
-    color: blueviolet;
+    color: green;
     font-size: 30px;
     overflow: hidden;
     margin: 0;
@@ -45,10 +44,13 @@ ul{
 }
 li{
     float: left;
+    display: block;
+    padding: 20px;
+    font-weight: bolder;
 }
 li a{
     display: block;
-    color: blueviolet;
+    color: green;
     padding: 20px;
     text-decoration: none;
 }
@@ -71,4 +73,25 @@ li a{
     width: 100%;
     height: auto;
     display: block;
+}
+.bolder{
+    font-weight: bolder;
+}
+.rainbow-text {
+    font-size: 48px;
+    font-weight: bold;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbow 5s infinite;
+}
+
+@keyframes rainbow {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
 }
